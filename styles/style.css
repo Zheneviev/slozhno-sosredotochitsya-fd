@@ -1,5 +1,206 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background: url("../images/cover-image-dark.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: IBM Plex Mono, sans-serif;
 }
+
+/*ШАПКА*/
+
+.header {
+  block-size: 100vh;
+  min-block-size: 668px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: 10px 10px 160px 10px;
+  align-items: center;
+}
+
+/*Меню*/
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-button {
+  all: unset;
+  padding: 2px 13px 4px;
+}
+
+.header__theme-menu-list {
+  gap: 7px;
+  display: grid;
+}
+
+/*Состояния кнопок*/
+.header__theme-menu-button_active {
+  /*pointer-events: none;*/
+  border: 1px solid #FF0070;
+}
+
+.header__theme-menu-button:focus {
+  border: none;
+  border-bottom: 1px solid #FF007066;
+} 
+
+.header__theme-menu-button:focus-visible {
+  border: none;
+  border-bottom: 1px solid #FF007066;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid #FF007066;
+}
+
+
+/*Заголовок*/
+
+.header__theme-menu-item {
+  color: #FF0070;
+  display: grid;
+  font-size: 18px;
+}
+
+.header__title {
+  justify-self: start;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: #DB00FF;
+  line-height: 0.83;
+}
+
+.title-decor {
+  color: #000028;
+  background-color: #FF0070;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/*Параграф*/
+
+.header__subtitle {
+  justify-self: end;
+}
+
+/*Рес*/
+
+/*
+.decorative-element {
+  position: absolute;
+  justify-self: end;
+  align-self: start;
+  font-size: 18px;
+  margin-top: 2px;
+  margin-right: 29px;
+}
+
+.decorative-element::before {
+  content: 'REC';
+  color: #FF0070;
+}
+  */
+
+.decorative-element {
+  position: absolute;
+  color: #FF0070;
+  font-size: 18px;
+  justify-self: end;
+  align-self: start;
+  padding-right: 8px;
+  }
+
+.decorative-element::after {
+  content: '';
+  background-color: #FF0070;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 12px;
+  margin-bottom: 2px;
+  box-shadow: 0px 0px 4px 2px #FF0070;
+}
+
+/*Уголки*/
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid #FF0070;
+  border-bottom: 1px solid #FF0070;
+  align-self: end;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid #FF0070;
+  border-top: 1px solid #FF0070;
+  align-self: start;
+  justify-self: end;
+}
+
+ /* СЕКЦИИ С КОНТЕНТОМ */
+
+ .content {
+  margin-left: 10px;
+  margin-right: 10px;
+ }
+
+ .section {
+  grid-template-columns: repeat(3, 1fr);
+ }
+
+
+ /* первая */
+
+ /* вторая */
+
+ /* третья */
+
+
+ .paragraph {
+  color: #F1B2CE;
+;
+
+ }
+
+
+
+ /* СЕКЦИЯ С КАРТИНКАМИ */
+
+ .galery {
+  display: grid;
+  gap: 10px;
+ }
+
+ .question__section__image-item {
+  object-fit: cover;
+  inline-size: 100%;
+ }
+
+ /* ПОДВАЛ */
+
+ .footer {
+  block-size: 100vh;
+  min-block-size: 668px;
+  display: grid;
+  margin: 10px;
+ }
+
+ /*Заголовок*/
+
+ .footer__title {
+  justify-self: center;
+  align-self: center;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+ }
