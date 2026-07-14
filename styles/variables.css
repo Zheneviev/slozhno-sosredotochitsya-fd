@@ -4,7 +4,12 @@
 */
 :root {
 --bg-image: url("../images/cover-image-dark.png");
+
 --page-bg-color: #000028;
 --accent-color: #FF0070;
+--title-color: #DB00FF;
+--text-color : #F1B2CE;
+--focus-color: #FF007066;
 
+--basic-font: IBM Plex Mono;
 }
