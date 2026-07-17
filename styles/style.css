@@ -6,6 +6,8 @@
   font-family: var(--basic-font), sans-serif;
 }
 
+
+
 /*ШАПКА*/
 
 
@@ -39,6 +41,7 @@
   font-size: 18px;
   font-weight: 400;
   padding: 1.5px 13px;
+  color: var(--accent-color);
 }
 
 
@@ -79,7 +82,7 @@
 }
 
 .title-decor {
-  color: #000028;
+  color: var(--page-bg-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 18px;
@@ -91,7 +94,7 @@
   justify-self: end;
 }
 
-/*Рес*/
+/*Rес*/
 
 .decorative-element {
   position: absolute;
@@ -164,10 +167,11 @@
   display: grid;
   gap: 10px;
   line-height: 23.4px;
+  grid-template-rows: min-content 1fr;
 }
 
 .subtitle-decor {
-  color: #000028;
+  color: var(--page-bg-color);
   background-color: var(--accent-color);
   font-weight: 400;
   font-size: 18px;
@@ -422,6 +426,10 @@
 
 .section__how {
   gap: 10px;
+}
+
+.title-what {
+  width: 33%;
 }
 
 /*ПОДВАЛ*/
