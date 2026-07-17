@@ -9,69 +9,62 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
- --bg-image: url("../images/cover-image-dark.png");
+  --bg-image: url("../images/cover-image-dark.png");
 
---page-bg-color: #000028; /* фон*/
---accent-color: #FF0070; /* выделенные абзацы*/
---title-color: #DB00FF; /* заголовки*/
---text-color : #F1B2CE; /* цвет текста основного*/
---focus-color: #FF007066; /* интерактив*/
+  --page-bg-color: #000028; /* фон*/
+  --accent-color: #ff0070; /* выделенные абзацы*/
+  --title-color: #db00ff; /* заголовки*/
+  --text-color: #f1b2ce; /* цвет текста основного*/
+  --focus-color: #ff007066; /* интерактив*/
 
- .header__theme-menu-item {
-  color: var(--text-color);
- }
-
-  .header__theme-menu-button {
-  color: var(--accent-color);
- }
-
-  .decorative-element {
-  display: block;
- }
-
- .title-decor {
-  color: --text-color;
- }
-
- .decorated-zone::before {
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
- }
-
-  .decorated-zone::after {
-  border-right: 1px solid var(--accent-color);
-  border-top: 1px solid var(--accent-color);
- }
-
- .section__title {
-  color: var(--accent-color);
- }
-
- /*Состояния кнопок*/
-
-.header__theme-menu-button_active {
-  /*pointer-events: none;*/
-  border: 1px solid var(--accent-color);
-}
-
-.header__theme-menu-button:focus {
-  border: none;
-  border-bottom: 1px solid var(--focus-color);
-}
-
-.header__theme-menu-button:focus-visible {
-  border: none;
-  border-bottom: 1px solid var(--focus-color);
-}
-
-.header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
-}
-
-
+  .header__theme-menu-item {
+    color: var(--text-color);
   }
 
+  .header__theme-menu-button {
+    color: var(--accent-color);
+  }
 
+  .decorative-element {
+    display: block;
+  }
 
+  .title-decor {
+    color: --text-color;
+  }
 
- 
+  .decorated-zone::before {
+    border-left: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+  .decorated-zone::after {
+    border-right: 1px solid var(--accent-color);
+    border-top: 1px solid var(--accent-color);
+  }
+
+  .section__title {
+    color: var(--accent-color);
+  }
+
+  /*Состояния кнопок*/
+
+  .header__theme-menu-button_active {
+    /*pointer-events: none;*/
+    border: 1px solid var(--accent-color);
+  }
+
+  .header__theme-menu-button:focus {
+    border: none;
+    border-bottom: 1px solid var(--focus-color);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border: none;
+    border-bottom: 1px solid var(--focus-color);
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid var(--accent-color);
+  }
+}

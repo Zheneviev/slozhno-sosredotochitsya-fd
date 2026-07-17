@@ -6,11 +6,7 @@
   font-family: var(--basic-font), sans-serif;
 }
 
-
-
 /*ШАПКА*/
-
-
 
 .header {
   block-size: 100vh;
@@ -34,7 +30,7 @@
 
 .header__theme-menu-list {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   gap: 12px;
   margin: 0;
   padding: 0;
@@ -49,7 +45,6 @@
   padding: 1.5px 13px;
   color: var(--accent-color);
 }
-
 
 /*Состояния кнопок*/
 .header__theme-menu-button_active {
@@ -72,7 +67,6 @@
 }
 
 /*Заголовок*/
-
 
 .header__title {
   justify-self: start;
@@ -118,9 +112,7 @@
   box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
 
-
 /*Уголки*/
-
 
 .decorated-zone::before {
   content: "";
@@ -145,8 +137,6 @@
   justify-self: end;
 }
 
-
-
 /* СЕКЦИИ С КОНТЕНТОМ */
 
 .content {
@@ -159,16 +149,17 @@
   font-size: 18px;
 }
 
-.article-list {
-  display: grid;
-  gap: 20px;
-}
-
 .article__section {
   display: grid;
   gap: 10px;
   line-height: 23.4px;
   grid-template-rows: min-content 1fr;
+}
+
+.article-list {
+  display: grid;
+  gap: 20px;
+  font-size: 18px;
 }
 
 .subtitle-decor {
@@ -184,12 +175,6 @@
   margin-top: 40px;
   display: grid;
   gap: 20px;
-}
-
-.article-list {
-  display: grid;
-  gap: 20px;
-  font-size: 18px;
 }
 
 .text-link {
@@ -209,7 +194,6 @@
   border-bottom: 1px solid currentColor;
   cursor: pointer;
 }
-
 
 /* вторая */
 
@@ -238,7 +222,6 @@
 }
 
 /* СЕКЦИЯ С КАРТИНКАМИ */
-
 
 .section__pictures {
   margin-top: 50px;
@@ -280,71 +263,68 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
+@media (min-width >= 768px) {
+  /*ШАПКА*/
 
+  .header {
+    padding: 20px;
+  }
 
-@media (min-width: 768px) {
-
-/*ШАПКА*/
-
-.header {
-  padding: 20px;
-}
-
-.header__title {
+  .header__title {
     margin-left: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
-.header__subtitle {
-  width: 50%;
-  justify-self: end;
-}
+  .header__subtitle {
+    width: 50%;
+    justify-self: end;
+  }
 
-/*КОНТЕНТ*/
+  /*КОНТЕНТ*/
 
-.content {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  .content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-.title-pikture {
-  margin-bottom: 20px;
-}
+  .title-pikture {
+    margin-bottom: 20px;
+  }
 
-/*Первая*/
+  /*Первая*/
 
-.section__why {
-  margin-top: 60px;
-  grid-template-columns: 1fr 2fr;
-}
+  .section__why {
+    margin-top: 60px;
+    grid-template-columns: 1fr 2fr;
+  }
 
-/*Вторая*/ 
+  /*Вторая*/
 
-.section__what {
-  margin-top: 80px;
-}
+  .section__what {
+    margin-top: 80px;
+  }
 
-.title-what {
-  width: 25%;
-}
+  .title-what {
+    width: 25%;
+  }
 
-/*Третья*/
+  /*Третья*/
 
-.section__how {
+  .section__how {
     margin-top: 80px;
     display: flex;
     flex-direction: row;
-}
+  }
 
-.title-how {
-  flex: 1;
-}
+  .title-how {
+    flex: 1;
+  }
 
-.list__how {
-  flex: 2;
-}
+  .list__how {
+    flex: 2;
+  }
 
-/*Картинки*/
+  /*Картинки*/
 
   .section__pictures {
     margin-top: 80px;
@@ -388,57 +368,50 @@
 
   /*ПОДВАЛ*/
 
-.footer {
-  padding: 20px;
-  margin-top: 60px;
+  .footer {
+    padding: 20px;
+    margin-top: 60px;
+  }
 }
 
-}
-
-
-@media (min-width: 768px) {
-
+@media (min-width >= 1024px) {
   /*Меню*/
-.header__theme-menu {
-  justify-self: center;
-  align-self: start;
-}
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
 
-.header__theme-menu-list {
-  display: flex;
-  flex-direction: row;
-}
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+  }
 
-/*Первая*/
+  /*Первая*/
 
-.section__why {
- gap: 10px;
-}
+  .section__why {
+    gap: 10px;
+  }
 
+  /*Вторая*/
 
-/*Вторая*/
+  .list-what {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-.list-what {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
+  /*Третья*/
 
-/*Третья*/
+  .section__how {
+    gap: 10px;
+  }
 
-.section__how {
-  gap: 10px;
-}
+  .title-what {
+    width: 33%;
+  }
 
-.title-what {
-  width: 33%;
-}
+  /*ПОДВАЛ*/
 
-/*ПОДВАЛ*/
-
-.footer__title {
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
-}
-
-
-
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }

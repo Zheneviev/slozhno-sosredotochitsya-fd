@@ -3,14 +3,13 @@
   и их переопределение под различные устройства
 */
 :root {
---bg-image: url("../images/cover-image-dark.png");
+  --bg-image: url("../images/cover-image-dark.png");
 
---page-bg-color: #000028; /* фон*/
---accent-color: #FF0070; /* выделенные абзацы*/
---title-color: #DB00FF; /* заголовки*/
---text-color : #F1B2CE; /* цвет текста основного*/
---focus-color: #FF007066; /* интерактив*/
+  --page-bg-color: #000028; /* фон*/
+  --accent-color: #ff0070; /* выделенные абзацы*/
+  --title-color: #db00ff; /* заголовки*/
+  --text-color: #f1b2ce; /* цвет текста основного*/
+  --focus-color: #ff007066; /* интерактив*/
 
-
---basic-font: IBM Plex Mono;
+  --basic-font: IBM Plex Mono;
 }
