@@ -43,6 +43,10 @@
     border-top: 1px solid var(--text-color);
   }
 
+  .section__title {
+    color: var(--text-color);
+  }
+
   /*Состояния кнопок*/
 
   .header__theme-menu-button_active {
