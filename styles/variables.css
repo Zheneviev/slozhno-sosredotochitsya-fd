@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
-
+--bg-image: url("../images/cover-image-dark.png");
 
 --page-bg-color: #000028; /* фон*/
 --accent-color: #FF0070; /* выделенные абзацы*/

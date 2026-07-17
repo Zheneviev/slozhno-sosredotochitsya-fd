@@ -1,5 +1,5 @@
 .page {
-  background: url("../images/cover-image-dark.png");
+  background: var(--bg-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -24,6 +24,12 @@
 
 .header__theme-menu {
   justify-self: end;
+}
+
+.header__theme-menu-item {
+  color: var(--accent-color);
+  display: grid;
+  font-size: 18px;
 }
 
 .header__theme-menu-list {
@@ -67,11 +73,6 @@
 
 /*Заголовок*/
 
-.header__theme-menu-item {
-  color: var(--accent-color);
-  display: grid;
-  font-size: 18px;
-}
 
 .header__title {
   justify-self: start;
