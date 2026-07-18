@@ -11,5 +11,7 @@
   --text-color: #f1b2ce; /* цвет текста основного*/
   --focus-color: #ff007066; /* интерактив*/
 
+  --accent-color-shadow: rgba(255, 0, 112, 0.4);
+
   --basic-font: IBM Plex Mono;
 }
