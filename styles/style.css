@@ -43,13 +43,13 @@
   font-size: 18px;
   font-weight: 400;
   padding: 1.5px 13px;
-  color: var(--accent-color);
+  color: var(--color-button);
   cursor: pointer;
 }
 
 /*Состояния кнопок*/
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--color-button);
   pointer-events: none;
 }
 
@@ -57,8 +57,12 @@
   outline: none;
 }
 
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--text-color-title);
+}
+
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color-shadow);
+  border: 1px solid var(--color-border);
 }
 
 /*Заголовок*/
@@ -115,8 +119,8 @@
   display: block;
   width: 25px;
   height: 25px;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--text-color-title);
+  border-bottom: 1px solid var(--text-color-title);
   align-self: end;
 }
 
@@ -126,8 +130,8 @@
   display: block;
   width: 25px;
   height: 25px;
-  border-right: 1px solid var(--accent-color);
-  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--text-color-title);
+  border-top: 1px solid var(--text-color-title);
   align-self: start;
   justify-self: end;
 }
@@ -140,7 +144,7 @@
 }
 
 .section__title {
-  color: var(--accent-color);
+  color: var(--text-color-title);
   font-size: 18px;
 }
 
@@ -254,7 +258,7 @@
   justify-self: center;
   align-self: center;
   color: var(--title-color);
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--footer-shadow);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
@@ -411,142 +415,4 @@
   }
 }
 
-/*СВЕТЛАЯ*/
-
-.theme-light .header__theme-menu-item {
-  color: var(--text-color);
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--text-color);
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color-shadow);
-}
-
-.theme-light .header__theme-menu-button_active {
-  border: 1px solid var(--text-color);
-  pointer-events: none;
-}
-
-.theme-light .decorative-element {
-  display: none;
-}
-
-.theme-light .title-decor {
-  color: var(--text-color);
-}
-
-.theme-light .footer__title {
-    text-shadow: 2px 2px 0 var(--footer-shadow);
-}
-
-
-/*уголки*/
-
-.theme-light .decorated-zone::before {
-  border-left: 1px solid var(--text-color);
-  border-bottom: 1px solid var(--text-color);
-}
-
-.theme-light .decorated-zone::after {
-  border-right: 1px solid var(--text-color);
-  border-top: 1px solid var(--text-color);
-}
-
-
-@media (prefers-color-scheme: light) {
-  .header__theme-menu-button { 
-    color: var(--text-color);
-  }
-
-  .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--text-color);
-  }
-
-  .header__theme-menu-button:hover {
-    border: 1px solid var(--accent-color-shadow);
-  }
-
-
-  .section__title {
-    color: var(--text-color);
-  }
-
-  .header__theme-menu-button_active {
-    border: 1px solid var(--text-color);
-  }
-
-  .footer__title {
-    text-shadow: 2px 2px 0 var(--footer-shadow);
-  }
-
-
-  /*REC*/
-  .decorative-element {
-    display: none;
-  }
-
-  /*Уголки*/
-
-  .decorated-zone::before {
-    border-left: 1px solid var(--text-color);
-    border-bottom: 1px solid var(--text-color);
-  }
-  .decorated-zone::after {
-    border-right: 1px solid var(--text-color);
-    border-top: 1px solid var(--text-color);
-  }
-}
-
-/*ТЁМНАЯ*/
-
-.theme-dark .header__theme-menu-item {
-  color: var(--title-color);
-}
-
-.theme-dark .header__theme-menu-button {
-  color: var(--accent-color);
-}
-
-.theme-dark .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
-}
-
-.header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.theme-dark .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color-shadow);
-}
-
-.theme-dark .decorative-element {
-  display: block;
-}
-
-.theme-dark .section__title {
-  color: var(--accent-color);
-}
-
-.theme-dark .footer__title {
-    text-shadow: 2px 2px 0 var(--accent-color);
-}
-
-/*Уголки*/
-
-.theme-dark .decorated-zone::before {
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.theme-dark .decorated-zone::after {
-  border-right: 1px solid var(--accent-color);
-  border-top: 1px solid var(--accent-color);
-}
 

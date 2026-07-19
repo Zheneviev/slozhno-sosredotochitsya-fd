@@ -11,10 +11,15 @@
   */
   --bg-image: url("../images/cover-image-dark.png");
 
-  --page-bg-color: #000028; /* фон*/
-  --accent-color: #ff0070; /* выделенные абзацы*/
-  --title-color: #db00ff; /* заголовки*/
-  --text-color: #f1b2ce; /* цвет текста основного*/
+  --page-bg-color: #000028;
+  --accent-color: #ff0070;
+  --color-button: #ff0070;
+  --title-color: #db00ff;
+  --text-color: #f1b2ce;
+  --text-color-title: #ff0070;
+  --color-border: rgba(255, 0, 112, 0.4);
 
-  --accent-color-shadow: rgba(255, 0, 112, 0.4);
+  .decorative-element {
+    display: block;
+  }
 }
